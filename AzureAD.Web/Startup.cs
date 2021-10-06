@@ -2,14 +2,9 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AzureAD.Web
 {
@@ -43,6 +38,7 @@ namespace AzureAD.Web
                 //options.ResponseType = "id_token";
                 options.ResponseType = "code";
                 options.SaveTokens = true;
+                options.Scope.Add("api://8e122ab4-c483-4911-90bb-468b142ef2ab/AdminAccess");
                 options.ClientSecret = "Ijl7Q~X_n5XyHsT5XcUqDfY4uVmRIFpEueBJD";
             });
         }

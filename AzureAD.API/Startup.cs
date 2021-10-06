@@ -29,7 +29,7 @@ namespace AzureAD.API
                 {
                     opt.Authority = "https://login.microsoftonline.com/c3214b69-2530-49ea-b9ab-247fd7287dd1/v2.0";
                     opt.Audience = "api://8e122ab4-c483-4911-90bb-468b142ef2ab";
-
+                    opt.TokenValidationParameters.ValidateIssuer = false;
                 });
 
             services.AddSwaggerGen(c =>
