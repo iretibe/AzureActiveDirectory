@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AzureAD.Web
 {
@@ -40,6 +41,10 @@ namespace AzureAD.Web
                 options.SaveTokens = true;
                 options.Scope.Add("api://8e122ab4-c483-4911-90bb-468b142ef2ab/AdminAccess");
                 options.ClientSecret = "Ijl7Q~X_n5XyHsT5XcUqDfY4uVmRIFpEueBJD";
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    NameClaimType = "name"
+                };
             });
         }
 
