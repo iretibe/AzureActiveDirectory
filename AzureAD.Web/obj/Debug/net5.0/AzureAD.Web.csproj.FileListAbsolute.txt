@@ -321,7 +321,6 @@ C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\bin\Debug\net5.0\ru
 C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\obj\Debug\net5.0\AzureAD.Web.csprojAssemblyReference.cache
 C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\obj\Debug\net5.0\AzureAD.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\obj\Debug\net5.0\AzureAD.Web.AssemblyInfoInputs.cache
 C:\Users\Somad\source\repos\AzureActiveDirectory\AzureAD.Web\obj\Debug\net5.0\AzureAD.Web.AssemblyInfo.cs

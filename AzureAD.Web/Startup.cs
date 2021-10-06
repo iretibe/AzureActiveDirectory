@@ -25,8 +25,8 @@ namespace AzureAD.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Application Or Client ID: fe233775-921d-4639-a0d5-5a5bb7263b9a
-            //OAuth Authorization Endpoint: https://login.microsoftonline.com/c3214b69-2530-49ea-b9ab-247fd7287dd1/oauth2/v2.0/authorize
+            services.AddHttpClient();
+
             services.AddControllersWithViews();
 
             services.AddAuthentication(options =>
@@ -40,8 +40,10 @@ namespace AzureAD.Web
                 options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                 options.Authority = "https://login.microsoftonline.com/c3214b69-2530-49ea-b9ab-247fd7287dd1/v2.0";
                 options.ClientId = "fe233775-921d-4639-a0d5-5a5bb7263b9a";
-                options.ResponseType = "id_token";
+                //options.ResponseType = "id_token";
+                options.ResponseType = "code";
                 options.SaveTokens = true;
+                options.ClientSecret = "Ijl7Q~X_n5XyHsT5XcUqDfY4uVmRIFpEueBJD";
             });
         }
 
